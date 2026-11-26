@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculadora {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    width: 320px;
+}
+
+.pantalla {
+    background-color: #020617;
+    color: #f8fafc;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 16px;
+    min-height: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.anterior {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    min-height: 20px;
+}
+
+.actual {
+    font-size: 2rem;
+    font-weight: 700;
+    word-break: break-all;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #334155;
+    color: #ffffff;
+    border: none;
+    padding: 16px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.15s, transform 0.1s;
+    user-select: none;
+}
+
+button:hover {
+    background-color: #475569;
+}
+
+button:active {
+    transform: scale(0.94);
+}
+
+.span-dos {
+    grid-column: span 2;
+}
+
+.btn-operador {
+    background-color: #2563eb;
+}
+
+.btn-operador:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-ac, .btn-del {
+    background-color: #dc2626;
+}
+
+.btn-ac:hover, .btn-del:hover {
+    background-color: #b91c1c;
+}
+
+.btn-igual {
+    background-color: #16a34a;
+}
+
+.btn-igual:hover {
+    background-color: #15803d;
+}
